@@ -5,7 +5,7 @@
   "scripts": {
     "build": "vite build",
     "dev": "dotenv -c development -- npm run server:dev",
-    "postinstall": "prisma generate && ls -a /var/task/node_modules/.pnpm/@prisma+client@5.6.0_prisma@4.16.2/node_modules/.prisma/client",
+    "postinstall": "prisma generate && ls -a ./node_modules/.pnpm/@prisma+client@5.6.0_prisma@4.16.2/node_modules/.prisma/client",
     "lint": "eslint . --max-warnings 0",
     "prettier": "prettier --write .",
     "prod": "npm run lint && npm run build && npm run server:prod",
