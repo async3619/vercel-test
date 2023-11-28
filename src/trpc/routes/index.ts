@@ -2,6 +2,8 @@ import { publicProcedure, router } from '#/trpc';
 import { PrismaClient } from '@prisma/client';
 import { observable } from '@trpc/server/observable';
 
+console.log(process.cwd())
+
 const prisma = new PrismaClient();
 
 export const appRouter = router({
